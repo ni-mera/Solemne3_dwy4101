@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     # Planes
     'planes',
+    # Contacto,
+    'contacto',
     'corsheaders',
     'django_filters',
 ]
