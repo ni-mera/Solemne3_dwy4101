@@ -1,0 +1,62 @@
+.navbar-brand img{
+    max-width: 50px;
+    max-height: 50px;
+}
+footer {
+    background-color: rgb(88, 86, 86);
+    color: blanchedalmond;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute!important;
+}
+footer img {
+    max-width: 30px;
+    max-height: 30px;
+}
+#mainCarousel img {
+    min-height: 220px;
+    max-height: 270px; 
+}
+.card {
+    padding: 5px;
+}
+.card img {
+    height: 200px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#carouselHogar img{
+    min-height: 220px;
+    max-height: 250px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.carousel-inner h5, p{
+    color: rgb(236, 194, 55);
+}
+#carouselHogar .carousel-control-prev-icon, #carouselHogar .carousel-control-next-icon{
+    background-color: grey;
+}
+#card-movil img{
+    width: 200px;
+    height: 200px;
+}
+@media (max-width: 420px) {
+    footer {
+        position: relative!important;
+        width: 110%;
+    }
+}
+@media (max-width: 620px) {
+    #div-movil {
+        display: block;
+    }
+    footer {
+        position: fixed!important;
+        width: 110%;
+    }
+}

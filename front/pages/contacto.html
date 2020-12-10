@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClavisteV</title>
+    <link rel="shortcut icon" href="../img/icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="../js/contacto.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html"><img src="../img/icon2.png" alt="icono"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-phone-alt"></i> Contáctanos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Elige tu Plan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="planes_moviles.html">Planes Móviles</a>
+                    <a class="dropdown-item" href="planes-hogar.html">Planes Hogar</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-sm mt-3">
+        <h2>Solo un paso más, envíanos tus datos!</h2>
+        <form action="" id="formContacto">
+            <div class="form-group">
+                <label for="txtNombre">Nombres</label>
+                <input type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" class="form-control text-capitalize">
+            </div>
+            <div class="form-group">
+                <label for="txtApellido">Apellidos</label>
+                <input type="text" name="txtApellido" id="txtApellido" placeholder="Ingrese su apellido" class="form-control text-capitalize">
+            </div>
+            <div class="form-group">
+                <label for="txtEmail">Correo Electrónico</label>
+                <input type="email" name="txtEmail" id="" placeholder="Ingrese su email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="text">N° de contacto</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">+56</div>
+                  </div>
+                  <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Ej: 221234567 - 912345678" maxlength="9">
+                </div>
+              </div>
+            <div class="form-group">
+                <label for="txtMensaje">Motivo de contacto</label>
+                <textarea name="txtMensaje" id="" cols="30" rows="5" placeholder="Ingrese su mensaje" class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Enviar Formulario" class="btn btn-primary">
+            <input type="reset" value="Limpiar Formulario" class="btn btn-danger"> 
+        </form>
+    </div>
+    
+    
+    <footer class="col-12">
+        <span>
+            Todos los derechos reservados, ClavisteV 2020 <i class="far fa-copyright"></i>
+        </span>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
