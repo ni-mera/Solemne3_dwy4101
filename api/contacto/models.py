@@ -10,4 +10,4 @@ class Contacto(models.Model):
     estado = models.CharField(max_length=50, default='Recepcionado')
 
     def __str__(self):
-        return self.titulo
+        return self.titulo +' '+ str(self.fono)

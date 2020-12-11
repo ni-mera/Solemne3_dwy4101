@@ -15,6 +15,25 @@ $(document).ready(function(){
         unhighlight: function (element, errorClass, validClass) {
             $(element).removeClass('is-invalid').addClass('is-valid');
         },
+        submitHandler: function(){
+            axios.post('http://localhost:8000/contacto/', 
+                {           
+                    titulo: "Contacto",
+                    nombre: $('#txtNombre').val() +' '+ $('#txtApellido').val(),
+                    email: $('#txtEmail').val(),
+                    fono: parseInt($('#contactNumber').val()),
+                    mensaje: $('#txtMensaje').val(),
+                    receptor: "contacto@clavistev.cl",
+                    estado: "Recepcionado"               
+                }).then((resp) => {
+                    console.log(resp)
+                    alert('Datos enviados correctamente, pronto lo contactaremos')
+                }).catch((err) => {
+                    console.log(err)
+                    alert('Error al enviar datos')
+                    resetForm($('#formContacto'))
+                })
+        },
         rules: {
             txtNombre: {               
                 minlength: 3,
@@ -58,7 +77,7 @@ $(document).ready(function(){
                 required: 'El campo motivo de contacto es obligatorio',
                 minlength: 'Ingrese su motivo de contacto'
             }
-        }
+        }        
     });
 });
 
@@ -83,4 +102,11 @@ function ValidaSoloNumber(inputId){
             e.preventDefault();
         }
     });
+}
+
+function resetForm($form) {
+    $('#txtEmail').val('');
+    $form.find('input:text, input:password, input:file, select, textarea').val('');
+    $form.find('input:radio, input:checkbox')
+         .removeAttr('checked').removeAttr('selected');
 }
